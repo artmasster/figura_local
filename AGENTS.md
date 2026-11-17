@@ -15,6 +15,8 @@ Read [README.md](README.md) for what the mod does and how it works.
 | `src/main/java/.../client` | Client-only glue; reached only through `forge/ClientBridge` so a dedicated server never loads it |
 | `src/main/java/.../mixin` | The two changes to Figura, both by target name so the mod never compiles against Figura |
 | `src/test` | Backend tests that run both sides in one process |
+| `README.md`, `docs/README.<lang>.md` | The same README in English, Thai, Simplified Chinese and Japanese |
+| `docs/images` | README pictures. `how-it-works*.svg` are written by `make-diagram.py`, one per language |
 
 Keep new logic in `core` where it can be tested without the game, and keep the loader glue thin so
 other loaders or game versions can reuse `core`.
@@ -26,6 +28,9 @@ other loaders or game versions can reuse `core`.
 - The wire format in `core/tunnel/Frames.java` and the HTTP and WebSocket calls in
   `core/backend` must stay compatible with released jars. Raise `Frames.PROTOCOL` when a change is
   not compatible.
+- A change to one README goes into every language in the same commit, and each keeps the language
+  links at the top. Text that appears in a diagram is edited in `docs/images/make-diagram.py`, then
+  the script is run again.
 - Run `./gradlew build` before committing; it compiles, runs the tests and writes the jar to
   `build/libs`.
 - For an in-game check, run `./gradlew runServer` and

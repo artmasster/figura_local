@@ -1,17 +1,63 @@
-# FiguraLocal
+<h1 align="center">
+  <img src="docs/images/logo.webp" alt="" width="128"><br>
+  FiguraLocal
+</h1>
 
-Let your Minecraft server store and share [Figura](https://github.com/FiguraMC/Figura) avatars by itself.
+<p align="center">
+  Let your Minecraft server store and share <a href="https://github.com/FiguraMC/Figura">Figura</a> avatars by itself.
+</p>
+
+<p align="center">
+  <a href="https://github.com/artmasster/FiguraLocal/releases/latest"><img alt="Download the latest release" src="https://img.shields.io/github/v/release/artmasster/FiguraLocal?style=for-the-badge&label=Download&color=2ea44f"></a>
+</p>
+
+<p align="center">
+  <img alt="Minecraft 1.20.1" src="https://img.shields.io/badge/Minecraft-1.20.1-62b47a">
+  <img alt="Forge" src="https://img.shields.io/badge/Loader-Forge-e04e14">
+  <img alt="Figura 0.1.5 or newer" src="https://img.shields.io/badge/Figura-0.1.5%2B-5aaae7">
+  <img alt="MIT license" src="https://img.shields.io/badge/License-MIT-blue">
+</p>
+
+<p align="center">
+  <b>English</b> · <a href="docs/README.th.md">ไทย</a> · <a href="docs/README.zh-CN.md">简体中文</a> · <a href="docs/README.ja.md">日本語</a>
+</p>
+
+<p align="center">
+  <img src="docs/images/banner.webp" alt="Four players with different custom avatars around a server that keeps their avatars" width="900">
+</p>
 
 Figura normally uploads avatars to its central cloud, which limits each avatar to 100 KiB.
 With FiguraLocal the Minecraft server keeps the avatars, so the server owner decides the limit.
 
-- **No extra port.** Avatar data travels over the normal game connection.
-- **No external program.** Everything is plain Java inside the mod. No Node.js, no web server.
-- **No setup.** Drop the jar in `mods` on the server and on each player's game. That's it.
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="docs/images/feature-connection.webp" alt="" width="140"><br>
+      <b>No extra port</b><br>
+      Avatar data travels over the normal game connection.
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/images/feature-single-jar.webp" alt="" width="140"><br>
+      <b>No external program</b><br>
+      Everything is plain Java inside the mod. No Node.js, no web server.
+    </td>
+    <td align="center" width="33%">
+      <img src="docs/images/feature-drop-in.webp" alt="" width="140"><br>
+      <b>No setup</b><br>
+      Drop the jar in <code>mods</code> on the server and on each player's game. That's it.
+    </td>
+  </tr>
+</table>
 
 > Status: early release. The backend is covered by automated tests, and Figura 0.1.5 in a real
 > Forge client has logged in and connected to it through a Forge server. Sharing avatars between
 > several real players has not been tested in game yet. Please report problems.
+
+## Download
+
+**[Download the latest jar from the Releases page](https://github.com/artmasster/FiguraLocal/releases/latest)**
+
+The same jar goes on the server and on each player's game.
 
 ## Install
 
@@ -55,9 +101,9 @@ Deleting a file removes that player's avatar.
 
 ## How it works
 
-```
-Figura (unchanged)  ->  127.0.0.1 proxy in the player's game  ->  game connection  ->  backend inside the server
-```
+<p align="center">
+  <img src="docs/images/how-it-works.svg" alt="Figura, unchanged, talks to a local proxy in the player's game; the proxy sends the data over the game connection to the avatar storage inside the Minecraft server" width="900">
+</p>
 
 1. When a player joins, the server sends a hello packet on its own channel.
 2. The player's game opens a proxy on a loopback port and tells Figura to use it as its backend.
