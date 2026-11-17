@@ -16,6 +16,7 @@
   <img alt="Forge" src="https://img.shields.io/badge/Loader-Forge-e04e14">
   <img alt="Figura 0.1.5 ขึ้นไป" src="https://img.shields.io/badge/Figura-0.1.5%2B-5aaae7">
   <img alt="สัญญาอนุญาต MIT" src="https://img.shields.io/badge/License-MIT-blue">
+  <a href="https://mcsv.me"><img alt="พัฒนาโดย MCSV" src="https://img.shields.io/badge/Made%20by-MCSV-f472b6"></a>
 </p>
 
 <p align="center">
@@ -131,6 +132,18 @@ FiguraLocal แก้ Figura แค่สองจุด คือสองฟ�
 ./gradlew runServer
 ./gradlew runClient -PwithFigura -PjoinServer=127.0.0.1:25565
 ```
+
+## พัฒนาโดย MCSV
+
+<table>
+  <tr>
+    <td width="96" align="center"><a href="https://mcsv.me"><img src="images/mcsv.webp" alt="MCSV" width="64"></a></td>
+    <td>
+      FiguraLocal พัฒนาและดูแลโดย <a href="https://mcsv.me"><b>MCSV</b></a> บริการเช่าเซิร์ฟเวอร์ Minecraft ในไทย<br>
+      อยากได้เซิร์ฟ Forge ไว้ลองใช้ สร้างเสร็จพร้อมเล่นในราว 30 วินาที และคิดเงินเป็นรายวัน
+    </td>
+  </tr>
+</table>
 
 ## สัญญาอนุญาต
 

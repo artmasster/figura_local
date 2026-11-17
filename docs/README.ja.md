@@ -16,6 +16,7 @@
   <img alt="Forge" src="https://img.shields.io/badge/Loader-Forge-e04e14">
   <img alt="Figura 0.1.5 以降" src="https://img.shields.io/badge/Figura-0.1.5%2B-5aaae7">
   <img alt="MIT ライセンス" src="https://img.shields.io/badge/License-MIT-blue">
+  <a href="https://mcsv.me"><img alt="MCSV が開発" src="https://img.shields.io/badge/Made%20by-MCSV-f472b6"></a>
 </p>
 
 <p align="center">
@@ -131,6 +132,18 @@ jar は `build/libs` に出力されます。`./gradlew test` はバックエン
 ./gradlew runServer
 ./gradlew runClient -PwithFigura -PjoinServer=127.0.0.1:25565
 ```
+
+## MCSV が開発しています
+
+<table>
+  <tr>
+    <td width="96" align="center"><a href="https://mcsv.me"><img src="images/mcsv.webp" alt="MCSV" width="64"></a></td>
+    <td>
+      FiguraLocal は、タイを拠点とする Minecraft サーバーホスティング <a href="https://mcsv.me"><b>MCSV</b></a> が開発・保守しています。<br>
+      試すための Forge サーバーが必要なら、約 30 秒で用意でき、料金は日単位です。
+    </td>
+  </tr>
+</table>
 
 ## ライセンス
 

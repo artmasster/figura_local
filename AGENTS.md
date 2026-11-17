@@ -2,7 +2,8 @@
 
 A Minecraft mod that lets a server store and share Figura avatars itself. This repository is
 public: keep server names, addresses, customer details and test results from private machines out
-of every file and commit message.
+of every file and commit message. The only mention of MCSV is the public credit in the READMEs
+(the "Made by MCSV" badge and block, linking to https://mcsv.me).
 
 Read [README.md](README.md) for what the mod does and how it works.
 

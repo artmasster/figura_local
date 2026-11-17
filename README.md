@@ -16,6 +16,7 @@
   <img alt="Forge" src="https://img.shields.io/badge/Loader-Forge-e04e14">
   <img alt="Figura 0.1.5 or newer" src="https://img.shields.io/badge/Figura-0.1.5%2B-5aaae7">
   <img alt="MIT license" src="https://img.shields.io/badge/License-MIT-blue">
+  <a href="https://mcsv.me"><img alt="Made by MCSV" src="https://img.shields.io/badge/Made%20by-MCSV-f472b6"></a>
 </p>
 
 <p align="center">
@@ -132,6 +133,18 @@ To try it with Figura in a development client:
 ./gradlew runServer
 ./gradlew runClient -PwithFigura -PjoinServer=127.0.0.1:25565
 ```
+
+## Made by MCSV
+
+<table>
+  <tr>
+    <td width="96" align="center"><a href="https://mcsv.me"><img src="docs/images/mcsv.webp" alt="MCSV" width="64"></a></td>
+    <td>
+      FiguraLocal is built and maintained by <a href="https://mcsv.me"><b>MCSV</b></a>, a Minecraft server host based in Thailand.<br>
+      Need a Forge server to try it on? One is ready in about 30 seconds and billed by the day.
+    </td>
+  </tr>
+</table>
 
 ## License
 
