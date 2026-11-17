@@ -1,0 +1,20 @@
+# gradle
+build
+.gradle
+
+# ide
+.idea
+*.iml
+*.ipr
+*.iws
+out
+bin
+.settings
+.classpath
+.project
+.vscode
+
+# dev runs
+run
+run-client
+logs

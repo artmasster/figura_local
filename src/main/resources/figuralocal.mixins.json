@@ -1,0 +1,13 @@
+{
+  "required": false,
+  "package": "io.github.artmasster.figuralocal.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "HttpApiMixin",
+    "WebSocketAdapterMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}
